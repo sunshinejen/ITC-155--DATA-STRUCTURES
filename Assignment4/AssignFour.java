@@ -25,26 +25,27 @@ public class AssignFour {
 		nameMap2.put("Bruce", "Reges");
 		nameMap2.put("Hal", "Perkins");
 
-		isUnique(nameMap);// returns true
-		isUnique(nameMap2);// returns false
+		
+		
+		System.out.println(isUnique(nameMap));// returns true
+		System.out.println(isUnique(nameMap2));// returns false
 
 	}
 
 	public static boolean isUnique(Map<String, String> map) {
 		Set<String> set = new HashSet<String>();
 
-		for (String key : map.keySet()) {
-			String value = map.get(key);
+		for (String value : map.values()) {
 
 			if (set.contains(value)) {
-				System.out.println("false");
+				//System.out.println("false");
 				return false;
-			}
+			}else {
 
 			set.add(value);
 		}
-
-		System.out.println("true");
+	}
+		//System.out.println("true");
 		return true;
 	}
 
