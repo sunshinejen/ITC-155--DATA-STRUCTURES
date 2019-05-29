@@ -26,7 +26,7 @@ public class Assign7 {
 			}
 	
 		}
-		swap(a, i,largest); //swap the smallest to the front
+		swap(a, i,largest); //swap the largest to the front
 	}
 
 	}
